@@ -1,16 +1,9 @@
 #ifndef _STOP_WATCH_H_
 #define _STOP_WATCH_H_
 
-#include <iostream>
-#include <QObject>
-#include <QStateMachine>
-#include <QTime>
 
 class StopWatch
-  : public QObject
 {
-  Q_OBJECT
-
 public:
   StopWatch()
   {}

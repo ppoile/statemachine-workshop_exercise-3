@@ -18,7 +18,6 @@ private slots:
 void TestStopWatch::verify_inital_state()
 {
   StopWatch stop_watch;
-  QCoreApplication::processEvents();
 
   QCOMPARE(stop_watch.isRunning(), false);
   QCOMPARE(stop_watch.time(), 0.0);
@@ -29,7 +28,6 @@ void TestStopWatch::verify_inital_state()
 //void TestStopWatch::verify_start_while_stopped()
 //{
 //  StopWatch stop_watch;
-//  QCoreApplication::processEvents();
 //
 //  stop_watch.doStartStop(); // start
 //
@@ -41,7 +39,6 @@ void TestStopWatch::verify_inital_state()
 //void TestStopWatch::verify_stop_while_running()
 //{
 //  StopWatch stop_watch;
-//  QCoreApplication::processEvents();
 //  stop_watch.doStartStop(); // start
 //  QTRY_VERIFY(stop_watch.time() != 0.0);
 //
@@ -56,7 +53,6 @@ void TestStopWatch::verify_inital_state()
 //void TestStopWatch::verify_reset_while_running()
 //{
 //  StopWatch stop_watch;
-//  QCoreApplication::processEvents();
 //  stop_watch.doStartStop();  // start
 //  QTRY_VERIFY(stop_watch.time() != 0.0);
 //
@@ -71,7 +67,6 @@ void TestStopWatch::verify_inital_state()
 //void TestStopWatch::verify_reset_while_stopped()
 //{
 //  StopWatch stop_watch;
-//  QCoreApplication::processEvents();
 //  stop_watch.doStartStop(); // start
 //  QTRY_VERIFY(stop_watch.time() != 0.0);
 //  stop_watch.doStartStop(); // stop
